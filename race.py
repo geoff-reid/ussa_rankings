@@ -34,7 +34,7 @@ class Standings:
         self.resultList += [race.name + '-Run1', race.name + '-Run2', race.name + '-Comb']
         self.numResults += 3
         #self.bestOf = math.trunc(self.numResults / 2)
-        self.bestOf = 6
+        self.bestOf = 5
         self.__addRaceGroup(self.u12, race.u12)
         self.__addRaceGroup(self.u14, race.u14)
 
@@ -97,7 +97,7 @@ class Race:
 
             #split into u12 and u14
             for row in csv_reader:
-                if row['BirthYear'] == '2005' or row['BirthYear'] == '2006':
+                if row['BirthYear'] == '2006' or row['BirthYear'] == '2007':
                     self.u14.append(row)
                 else:
                     self.u12.append(row)
