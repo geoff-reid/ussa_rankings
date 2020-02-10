@@ -20,9 +20,9 @@ Blandford = race.Race('Blandford')
 Blandford.load_races('blandford.csv')
 standings.addRace(Blandford)
 
-#BerkshireEast = race.Race('BerkshireEast')
-#BerkshireEast.load_races('BerkshireEast.csv')
-#standings.addRace(BerkshireEast)
+BerkshireEast = race.Race('BerkshireEast')
+BerkshireEast.load_races('BerkshireEast.csv')
+standings.addRace(BerkshireEast)
 
 standings.saveStandings()
 
